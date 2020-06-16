@@ -1,0 +1,57 @@
+.currenthostels {
+  margin: 8px;
+  padding: 12px;
+  background-color: #33333323;
+  border-bottom: 2px solid #7a7979;
+  border-right: 3px solid #585757;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-overflow: hidden;
+  box-shadow: 0px 0px 15px #cecece inset;
+}
+.divcurrenthostels {
+  margin: 15px;
+  width: 90%;
+  overflow: auto;
+}
+.hostelnamesflex {
+  display: flex;
+  flex-direction: row;
+}
+.fixedbuttons {
+  min-width: 230px;
+}
+.removebutton {
+  margin-top: 10px;
+  margin-left: 5px;
+  align-self: start;
+  border-right: 2px solid #505050;
+  border-bottom: 1px solid #4b4b4b;
+  font-size: small;
+  padding: 3px 10px 3px 10px;
+}
+.removebutton:active {
+  border: 3px solid #383838;
+  background-color: #929292;
+}
+.serials {
+  padding-right: 10px;
+  border-right: 3px solid #929292;
+}
+@media (max-width: 720px) {
+  .divcurrenthostels {
+    margin: -30px;
+    width: 100%;
+    overflow: auto;
+  }
+  .currenthostels {
+    margin: 8px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: hidden;
+  }
+}

@@ -1,0 +1,169 @@
+.flex-container0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-container1 {
+  // overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  min-width: 250px;
+  padding-top: 50px;
+  min-height: 600px;
+  background-color: #0076c5fa;
+  box-shadow: 0px 0px 20px #021831 inset;
+}
+
+.flexdiv {
+  color: #909090;
+  padding: 0px;
+  background-color: #0000001a;
+  box-shadow: 0px 0px 12px 6px #0000002d inset;
+  width: 75%;
+  height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+}
+.buttonactive {
+  padding: 0px;
+  background-color: #e00000d7;
+  color: #ffffff;
+  width: 75%;
+  height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  box-shadow: 0px 0px 20px rgba(228, 228, 228, 0.322) inset;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+}
+.flexdiv:hover {
+  color: #131212;
+  background-color: #0080e998;
+  box-shadow: 0px 0px 20px #f1f1f138 inset;
+  border: none;
+}
+
+.admindiv {
+  padding-left: 50px;
+  margin-top: 0px;
+  padding-bottom: 40px;
+  height: 100%;
+  background-color: rgb(203, 207, 209);
+}
+.heading111 {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.overflowcontrol {
+  margin-bottom: 50px;
+  overflow: auto;
+  background-color: #e7e7e7;
+  box-shadow: 0px 0px 100px 8px rgba(32, 32, 32, 0.514) inset;
+  padding: 30px;
+}
+.flex2 {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  margin-left: 0px;
+}
+.allheadings {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 22px #01339e inset;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  color: #520101;
+}
+
+@media (max-width: 720px) {
+  .flex-container0 {
+    flex-direction: column;
+  }
+  .flex-container1 {
+    // overflow: visible;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px 0px 0px 0px;
+    min-height: auto;
+    background-color: #0086e0;
+    box-shadow: 0px 0px 20px #03448d inset;
+    box-shadow: none;
+  }
+
+  .flexdiv {
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 40px;
+
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .buttonactive {
+    margin: 0px;
+    padding: 0px;
+    background-color: #c30303dc;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 40px;
+
+    box-shadow: 0px 0px 15px rgb(243, 8, 8) inset;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .flexdiv:hover {
+    color: #131212;
+
+    border: none;
+  }
+
+  .admindiv {
+    padding-left: 20px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    height: 100%;
+
+    min-height: 520px;
+  }
+  .heading111 {
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+
+  .flex2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .allheadings {
+    font-size: 24px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 22px #01339e inset;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    color: #520101;
+  }
+}

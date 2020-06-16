@@ -1,0 +1,149 @@
+.signupflex {
+  background-image: url("./back11.jpg");
+  background-size: cover;
+  background-repeat: inherit;
+  font-weight: bold;
+
+  min-height: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form {
+  min-width: 400px;
+  padding: 40px 40px 60px 40px;
+  background-color: #e0fffd;
+  box-shadow: 2px -5px 10px #565756;
+}
+
+.red {
+  color: red;
+}
+
+#emailid {
+  float: right;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px -5px 10px #b6b6b6 inset;
+}
+
+#lastName {
+  float: right;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px -5px 10px #b6b6b6 inset;
+}
+
+#password_id {
+  float: right;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px -5px 10px #b6b6b6 inset;
+}
+
+#retypePassword_id {
+  float: right;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px -5px 10px #b6b6b6 inset;
+}
+
+#firstName {
+  float: right;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px -5px 10px #b6b6b6 inset;
+}
+#create_an_Account {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 40px 10px 40px;
+  border: none;
+  background-color: rgb(40, 107, 1);
+  box-shadow: 0px 0px 10px #3db108 inset;
+  color: White;
+}
+#create_an_Account:active {
+  background-color: rgb(63, 163, 5);
+  box-shadow: 0px 0px 10px #7df147 inset;
+}
+.terms {
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: normal;
+}
+.singuptag {
+  padding: 5px 60px 5px 60px;
+  background-color: #161616;
+  margin-top: 0px;
+  font-size: 40px;
+  text-align: center;
+  color: #c8c8c8;
+  box-shadow: 0px 0px 10px #565756;
+}
+.signupflex2 {
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  background-color: #00aeff1a;
+  box-shadow: 0px 0px 12px #01325a;
+  color: #000000;
+}
+
+//mobile-view
+
+@media (max-width: 720px) {
+  .signupflex {
+    padding: 40px 10px 180px 10px;
+  }
+  .signupflex2 {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+  }
+
+  .singuptag {
+    padding: 5px 60px 5px 60px;
+
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .form {
+    padding: 20px 10px 30px 10px;
+    min-width: 200px;
+  }
+
+  #emailid {
+    float: right;
+    width: 52%;
+  }
+
+  #lastName {
+    float: right;
+    width: 52%;
+  }
+
+  #password_id {
+    float: right;
+    width: 52%;
+  }
+
+  #retypePassword_id {
+    float: right;
+    width: 52%;
+  }
+
+  #firstName {
+    float: right;
+    width: 52%;
+  }
+}

@@ -1,0 +1,150 @@
+.header0 {
+  width: 100%;
+  background-image: url("./back3.png");
+
+  background-size: cover;
+}
+.logoinssertion {
+  margin: 0px;
+  margin-left: 20px;
+  padding: 50px;
+  background-image: url("./logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+.headerflex {
+  margin-left: 12%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.header01 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  text-shadow: 3px 3px 4px #000000;
+  color: #fafafa;
+}
+
+.header1 {
+  text-align: center;
+  padding-left: 20px;
+  font-size: 15px;
+  font-style: italic;
+
+  color: #141413;
+}
+.nav0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0000003a;
+  padding: 7.2px;
+  box-shadow: 0px 2px 22px #0000006b inset;
+}
+
+.nav1 {
+  background-color: #0000001a;
+  font-size: 14px;
+  color: #e7e7e7;
+  padding: 2.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 6px;
+  //   border-right: 4px solid #013d3a;
+  text-decoration: none;
+
+  text-shadow: 0px 0px 2px #0a0a0ae1;
+}
+
+.nav2 {
+  background-color: #000000c5;
+
+  color: #ffffff;
+  padding: 2.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 6px;
+  //   border-right: 4px solid #013d3a;
+  text-decoration: none;
+
+  text-shadow: 0px 0px 2px #5a5a5ae1;
+  box-shadow: 0px 0px 6px #c3c3c305 inset;
+}
+//logout button
+.logout {
+  background-color: #e20000;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 2.1%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 6px;
+  //   border-right: 4px solid #013d3a;
+  text-decoration: none;
+
+  box-shadow: 0px 0px 3px #000000 inset;
+}
+
+//mobile view
+@media (max-width: 720px) {
+  .header0 {
+    width: 100%;
+  }
+  .header01 {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+  }
+
+  .header1 {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .nav0 {
+    padding: 5.56px;
+  }
+
+  .nav1 {
+    font-size: 13px;
+
+    padding: 2.1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 6px;
+  }
+
+  .nav2 {
+    padding: 2.1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 6px;
+    box-shadow: 0px 0px 2px #c3c3c305 inset;
+  }
+
+  .logout {
+    font-size: 13px;
+
+    padding: 2.1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 6px;
+  }
+  .logoinssertion {
+    margin-top: 8px;
+    padding: 30px;
+    background-image: url("./logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+  }
+  .headerflex {
+    margin-left: 0px;
+    text-align: center;
+  }
+}

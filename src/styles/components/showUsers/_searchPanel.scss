@@ -1,0 +1,70 @@
+.spWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 18px;
+  text-align: center;
+  background-color: #c0ddda;
+  box-shadow: 0 0 38px #07626e inset;
+}
+.spsortBy {
+  font-size: 14px;
+  width: 100px;
+}
+.sporder {
+  width: 120px;
+}
+.spsearch {
+  font-size: smaller;
+  width: 110px;
+}
+.spsubmit {
+  font-size: 15px;
+  height: 35px;
+  width: 70px;
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(54, 79, 221);
+}
+.spbox {
+  height: 20px;
+  border: 1px solid black;
+  background-color: rgb(214, 210, 210);
+  padding-left: 10px;
+}
+.spout {
+  margin-left: 15px;
+}
+.spsubmit {
+  background-color: #015a14;
+}
+.spsubmit:enabled:hover {
+  color: black;
+}
+.spsubmit:disabled {
+  opacity: 0.5;
+}
+.findspace {
+  margin-top: 6px;
+}
+@media (max-width: 720px) {
+  .spWrapper {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px;
+    text-align: center;
+  }
+  .spsortBy {
+    width: 80px;
+  }
+  .sporder {
+    width: 80px;
+  }
+  .spsearch {
+    width: 110px;
+  }
+}

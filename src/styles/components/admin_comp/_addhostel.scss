@@ -1,0 +1,83 @@
+.errorshow {
+  margin-bottom: 30px;
+  color: #ff0000;
+}
+.box3-1 {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.hosteldetails {
+  width: 280px;
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0px 0px 8px #a8a8a8 inset;
+}
+.hosteldetailssave {
+  background-color: #c1c2c2;
+  padding: 3px 14px 3px 14px;
+
+  box-shadow: 4px 0px 6px #999999 inset;
+}
+.csvbuttons {
+  background-color: #c1c2c2;
+  padding: 3px 16px 3px 16px;
+  margin-right: 30px;
+  margin-top: 30px;
+
+  box-shadow: 4px 0px 6px #999999 inset;
+}
+.box3-2 {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.eachbox {
+  padding: 5px;
+  margin: 0px;
+  margin-left: 5px;
+  color: #c8c8c8;
+  background: #858585;
+}
+.adddetails {
+  padding: 0px;
+  margin: 0px;
+}
+.submit {
+  text-align: right;
+}
+.addhostelbuttons {
+  font-size: small;
+  margin-right: 40px;
+  padding: 3px;
+}
+.page3 {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  border: 1px solid #000000;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  margin: 10px auto;
+}
+.csv-input {
+  background-color: #cccccc;
+  padding: 15px;
+  display: block;
+  margin: 15px auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+@media (max-width: 720px) {
+  .hosteldetails {
+    width: 100%;
+  }
+}
