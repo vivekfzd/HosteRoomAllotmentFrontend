@@ -2,6 +2,7 @@ import React from "react";
 import UserInfo from "./UserPage/UserInfo";
 import AddPreferences from "./UserPage/AddPreferences";
 import AllotmentResult from "./UserPage/AllotmentResult";
+import DisableAddPreferences from "./UserPage/DisableAddpreferences";
 
 class Userpage extends React.Component {
   state = {
@@ -9,6 +10,8 @@ class Userpage extends React.Component {
     addPreferences: false,
     allotmentResult: false,
     User: this.props.User,
+
+    disableAddPreferences: false,
   };
 
   userInfo = () => {
@@ -16,6 +19,7 @@ class Userpage extends React.Component {
       userInfo: true,
       addPreferences: false,
       allotmentResult: false,
+      disableAddPreferences: false,
     }));
   };
   addPreferences = () => {
@@ -23,6 +27,7 @@ class Userpage extends React.Component {
       userInfo: false,
       addPreferences: true,
       allotmentResult: false,
+      disableAddPreferences: false,
     }));
   };
   allotmentResult = () => {
@@ -30,6 +35,7 @@ class Userpage extends React.Component {
       userInfo: false,
       addPreferences: false,
       allotmentResult: true,
+      disableAddPreferences: false,
     }));
   };
   updatePreferences = (data) => {
@@ -45,6 +51,17 @@ class Userpage extends React.Component {
     }));
   };
 
+
+  //I have added the new function for disable button
+  disableAddPreferencesPage = () => {
+    this.setState(() => ({
+      userInfo: false,
+      addPreferences: false,
+      allotmentResult: false,
+      disableAddPreferences: true,
+    }));
+  }
+
   render() {
     //console.log(this.props.User.disabled)
     //console.log(this.props.User.vacantRooms)
@@ -58,19 +75,19 @@ class Userpage extends React.Component {
           >
             User Info
           </button>
-          {this.props.User.editable
-            &&
-            !this.props.User.editable
+          {/* I addded the new disabled Add perferences */}
+          {!this.props.User.editable
             &&
             <button
-              className={this.state.addPreferences ? "buttonactive" : "flexdiv"}
-              onClick={this.addPreferences}
-              disabled={!this.props.User.editable}
+              className={this.state.disableAddPreferences ? "buttonactive" : "flexdiv"}
+              onClick={this.disableAddPreferencesPage}
+              disabled={this.props.User.editable}
             >
               Add Preferences
           </button>
 
           }
+          {/* end */}
           {this.props.User.editable
             &&
             <button
@@ -92,12 +109,20 @@ class Userpage extends React.Component {
           <h1 className="allheadings">User Workspace</h1>
           <div className="admindiv">
             {(this.state.userInfo && <UserInfo User={this.state.User} />) ||
+              (this.state.disableAddPreferences && (
+                <DisableAddPreferences
+                  User={this.state.User}
+                /*updatePreferences={this.updatePreferences}*/
+                />
+              ))
+              ||
               (this.state.addPreferences && (
                 <AddPreferences
                   User={this.state.User}
                   updatePreferences={this.updatePreferences}
                 />
-              )) ||
+              ))
+              ||
               (this.state.allotmentResult && (
                 <AllotmentResult
                   User={this.state.User}

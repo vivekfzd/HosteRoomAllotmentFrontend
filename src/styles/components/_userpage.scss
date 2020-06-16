@@ -223,6 +223,25 @@
 .Apply-button:disabled {
   opacity: 50%;
 }
+
+
+/*disable add prefernces is now on*/
+
+.disabled-Add-prederences{
+  margin-top:20px;
+
+}
+
+
+.disabled-Add-prederences>legend{
+  background-color: #000;
+  color: #fff;
+  padding: 5px 7px;
+}
+
+
+
+/*end*/
 @media (max-width: 720px) {
   .preferenceflex {
     flex-direction: column;
